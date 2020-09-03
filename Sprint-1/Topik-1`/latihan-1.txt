@@ -1,0 +1,18 @@
+Cara Menggunakan Microsoft Word
+1. Klik logo windows / tekan tombol windows
+2. Cari Microsoft Office
+3. Jika Microsoft Office tidak ada
+  Maka install Microsoft Office
+4. Jika Microsoft Office ada
+  Maka mencari aplikasi Microsoft Word
+5. Open Microsoft Word
+6. Mengetik data kedalam Microsoft Word
+7. Keluar dari Microsoft Word
+8. Jika data belum disimpan 
+  Maka tampilkan pilihan untuk save atau don't save
+9. Jika memilih save
+  Maka melakukan save data dan kemudian keluar dari Microsoft Word
+10. Jika memilih don't save
+  Maka melakukan keluar dari Microsoft Word
+11. Jika data sudah disave
+  Maka melakukan keluar dari Microsoft Word
