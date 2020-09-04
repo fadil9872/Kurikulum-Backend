@@ -1,0 +1,1 @@
+Karena pertama perintah "which" adalah perintah untuk menampilkan direktori tempat aplikasi yang dimaksud disimpan. Jadi ketika kita mengetikkan "which php" di CLI maka akan menampikan lokasi tempat aplikasi itu tersimpan 
