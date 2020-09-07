@@ -1,0 +1,15 @@
+1. var_dump(true&&false)
+   => hasilnya adalah false karena pada operator '&&'(dan) hasil bernilai bernar jika semua kondisi bernilai benar,
+      jika salah satu salah maka hasilnya salah (false).
+
+2. var_dump(true||false)
+   => hasilnya adalah true karena pada operator '||'(atau) hasil bernilai benar jika salah satu kondisi bernilai
+      benar.
+
+3. var_dump(false||false)
+   => hasilnya adalah false karena pada operator '||'(atau) hasil bernilai salah jika kedua kondisi bernilai 
+      salah(false)
+
+4. var_dump(!false)
+   => hasilnya adalah true karena operator '!' bernilai kebalikan, jika nilai 'false' diberikan '!' maka hasilnya
+      adalah kebalikan dari nilai tersebut, yaitu true
