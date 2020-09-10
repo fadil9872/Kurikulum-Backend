@@ -24,7 +24,7 @@
             $modus = array_count_values($bil);
             foreach($modus as $key => $value){
                 if($value == max($modus)){
-                    echo "{$key}\n";
+                    echo "Nilai terbanyak :{$key} frekuensi {$value}\n";
                 }
             }
             break;
@@ -36,11 +36,11 @@
                 $hasil = floor($median);
                 echo $bil[$hasil]."\n";
             }else{
-                $hasil1 = floor($madian);
+                $hasil1 = floor($median);
                 $hasil2 = round($median);
 
                 $median = ($hasil1+$hasil2)/2;
-                echo $hasil1;
+                echo $median;
             }
             break;
     }
