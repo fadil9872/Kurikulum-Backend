@@ -1,19 +1,23 @@
 <?php
-    $bil = [5,9,6,7,9,8,10,7,8];
+    $bil = [5,9,6,7,9,8,10,7];
+    // echo "Ingin input berapa angka ? ";
+    // $input = trim(fgets(STDIN));
+    // $bil = array();
+    // for($i=0;$i<$input; $i++){
+    //     echo "Nilai ke-".$i.": "; 
+    //     array_push($bil,trim(fgets(STDIN)));
+    // }
     echo "Niali ";
     foreach ($bil as $key => $value) {
         echo "{$value}";
     };
     echo "\n1. Mean \n2. Modus \n3. Median \n";
-    echo "Pilih menua : ";
+    echo "Pilih menu : ";
     $pilih = trim(fgets(STDIN));
     
     switch ($pilih) {
         case 1:
             $sum = 0;
-            foreach($bil as $key => $value){
-                
-            }
             for($i=0;$i<count($bil);$i++){
                 $sum += $bil[$i];
             }
@@ -36,11 +40,9 @@
                 $hasil = floor($median);
                 echo $bil[$hasil]."\n";
             }else{
-                $hasil1 = floor($median);
-                $hasil2 = round($median);
-
-                $median = ($hasil1+$hasil2)/2;
-                echo $median;
+                
+                $hasil = ($bil[$median-1]+$bil[$median])/2;
+                echo $hasil."\n";
             }
             break;
     }
