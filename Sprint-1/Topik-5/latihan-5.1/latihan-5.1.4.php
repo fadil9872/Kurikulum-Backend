@@ -1,5 +1,5 @@
 <?php
-function luasSegitiga($atap, $alas, $tinggi){
+function luasTrapesium($atap, $alas, $tinggi){
     return ($atap+$alas)/2*$tinggi;
 }
 echo "=========================================\n";
@@ -13,7 +13,7 @@ $alas = trim(fgets(STDIN));
 echo "Inputkan nilai tinggi : ";
 $tinggi = trim(fgets(STDIN));
 
-$hasil = luasSegitiga($atap, $alas,$tinggi);
+$hasil = luasTrapesium($atap, $alas,$tinggi);
 
 echo "Luas Segitiga adalah ".$hasil."\n";
 
