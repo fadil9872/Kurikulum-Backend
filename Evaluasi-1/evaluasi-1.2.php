@@ -1,6 +1,6 @@
 <?php
     $bil = 5956560159466056;
-    function selectionValue($bil){
+    function selectionValue($bil): int{
         $arr_bil = explode('0',(string)$bil);
         // print_r($arr_bil);
         foreach($arr_bil as $key => $value){
