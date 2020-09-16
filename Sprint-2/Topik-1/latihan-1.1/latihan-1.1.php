@@ -67,24 +67,22 @@
 
     class Pelayanan extends Pendataan{
 
-        public $dataPinjam = [
-            [
-                'name' => "Hamba Allah",
-                'judul' => "2 Jam Ngapa-ngapain",
-                'tgl_pinjam' => "19-19-19",
-                'batas_pinjam' => "20-20-20"
-            ]
-        ];
+        public $dataPinjam = [];
 
         public $dataKembali = [];
          
         public function peminjaman(){
+
+            //MENAMPILKAN DATA
+
             echo "DAFTAR BUKU\n";
             echo "===========\n\n";
-            for($i=0; $i<count($this->dataBuku); $i++){
-                echo ($i+1).". ".$this->dataBuku[$i]['judul']."\n"; 
-            }
+            print_r($this->dataBuku);
             echo "\n\n";
+            
+
+            //INPUT DATA 
+
             echo "PEMINJAMAN BUKU\n";
             echo "===============\n";
             $i = count($this->dataPinjam);
@@ -97,12 +95,23 @@
             echo "Batas Peminjaman : ";
             $this->dataPinjam[$i]['batas_pinjam'] = trim(fgets(STDIN));
 
+            //EDIT ISI DATA BUKU
+            for($i=0;$i<count($this->dataBuku); $i++){
+                for($j=0;$j<count($this->dataPinjam);$j++){
+                    if($this->dataBuku[$i]['judul'] == $this->dataPinjam[$j]['judul']){
+                        
+                        unset($this->dataBuku[$i]);
+                        array_slice($this->dataBuku,0,count($this->dataBuku));
+                    }
+                }
+            }
+            print_r($this->dataBuku);
             print_r($this->dataPinjam); 
         } 
 
         public function pengembalian(){
             echo "DAFTAR PEMINJAMAN BUKU\n";
-            echo "===========\n\n";
+            echo "======================\n\n";
             print_r($this->dataPinjam);
             
             echo "\n\n";
