@@ -24,7 +24,7 @@
 
     for($i=0;$i<$input; $i++){
         if($students[$i]['divisi'] == "Backend"){
-            echo "Yang minat sebagai Backend adalah ".$students[$i]['name'].", ";
+            echo "Yang minat sebagai Backend adalah ".$students[$i]['name'].", ";[]
         }
     }
     echo "\n";
