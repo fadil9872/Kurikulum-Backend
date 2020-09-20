@@ -1,7 +1,7 @@
 <?php
     class Perhitungan{
         public static function luasPersegi($panjang, $tinggi){
-            if($a<=0 || $b<=0 || $t<=0){
+            if($panjang<=0 || $tinggi<=0){
                 throw new Exception("Nilai tidak boleh kurang dari atau sama dengan 0\n");
                 
             }
@@ -9,7 +9,7 @@
         }
 
         public static function kelilingPersegi($panjang, $tinggi){
-            if($a<=0 || $b<=0 || $t<=0){
+            if($panjang<=0 || $tinggi<=0){
                 throw new Exception("Nilai tidak boleh kurang dari atau sama dengan 0\n");
                 
             }
@@ -18,7 +18,7 @@
 
         //Lingkaran
         public static function luasLingkaranR($r){
-            if($a<=0 || $b<=0 || $t<=0){
+            if($r<=0){
                 throw new Exception("Nilai tidak boleh kurang dari atau sama dengan 0\n");
                 
             }
@@ -26,7 +26,7 @@
         }
 
         public static function kelilingLingkaranR($r){
-            if($a<=0 || $b<=0 || $t<=0){
+            if($r<=0){
                 throw new Exception("Nilai tidak boleh kurang dari atau sama dengan 0\n");
                 
             }

@@ -1,11 +1,11 @@
 <?php
     class Register{
         public static $student = [
-            [
+        '0'=> [
                 'nik' =>'T001',
                 'name' => 'Arief'
             ],
-            [
+        '1'=>[
                 'nik' =>'T002',
                 'name' => 'Bambang'
             ]
@@ -30,13 +30,13 @@
     }
 
     class Pengelolaan extends Register{
-        public function __construct($program){
-            if($program == "update"){
-                $this->updateStudent();
-            }elseif($program == "delete"){
-                $this->deleteStudent();
-            }   
-        }
+        // public function __construct($program){
+        //     if($program == "update"){
+        //         $this->updateStudent();
+        //     }elseif($program == "delete"){
+        //         $this->deleteStudent();
+        //     }   
+        // }
 
         public function updateStudent(){
             echo "\nUbah Data Santri Baru\n";
@@ -100,7 +100,8 @@
                 break;
             
             case 2:
-                $kelola = new Pengelolaan("update");
+                $kelola = new Pengelolaan;
+                $kelola->updateStudent();
                 break;
 
             case 3:
