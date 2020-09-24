@@ -1,0 +1,29 @@
+Normalisas Database
+=> Merupakan suatu pendekatan sistematis untuk meminimalkan redundansi data (duplikasi atau penyimpanan data yang sama
+   secara berulang) pada suatu database agar databse tersebut dapat bekerja dengan optimal.
+
+Normal Form
+=> Data yang direkam dan dimasukkan secara mentah dalam suatu tabel pada bentuk ini sangat mungkin terjadi inkonsistensi
+   dan anomali.
+
+
+First Normal Form (1NF)
+=> Bentuk normal yang pertama atau 1NF mensyaratkan beberapa kondisi dalam sebuah database, berikut adalah fungsi dari
+   bentuk normal pertama ini.
+   - Menghilangkan duplikasi kolom dari tabel yang sama.
+   - Buat tabel terpisah untuk masing-masing kelompok data terkait dan mengidentifikasi setiap baris dengan kolom yang 
+     unik (primary key).
+
+Second Normal Form (2NF)
+=> Syarat untuk menerapkan normalisasi bentuk kedua ini adalah data telah dibentuk dalam 1NF, berikut adalah beberapa
+   fungsi normalisasi 2NF.
+   - Menghapus beberapa subset data yang ada pada table dan menempatkan mereka pada tabel terpisah.
+   - Menciptakan hubungan antara tabel baru dan tabel lama dengan menciptakan foreign key.
+   - Tidak ada atribut dalam tabel yang secara fungsional bergantung pada candidate key tabel tersebut.
+
+Third Normal Form (3NF)
+=> Normalisasi database dalam bentuk 3NF bertujuan untuk menghilangkan seluruh atribut atau field yang tidak berhubungan
+   dengan primary key. Dengan deimikan tidak ada ketergantungan transitif pada setiap kandidat key. Syarat dari bentuk
+   normal ketiga atau 3NF adalah :
+   - Memenuhi semua persyaratan dari bentuk normal kedua.
+   - Manghapus kolom yang tidak tergantuk pada primary key.
