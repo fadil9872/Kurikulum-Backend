@@ -103,6 +103,7 @@
         echo "3. Update Data\n";
         echo "4. Delete Data\n";
         echo "5. Exit\n";
+        echo "Pilih Menu : ";
         $pilih = trim(fgets(STDIN));
         switch ($pilih) {
             case 1:
