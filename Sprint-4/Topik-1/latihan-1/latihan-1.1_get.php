@@ -37,7 +37,7 @@
 
                     $conn->insertDataGet($nm_barang,$harga);
 
-                    header("Location: tampilan.php");
+                    header("Location: latihan-1.1_get.php");
                     exit;
                 }
             
