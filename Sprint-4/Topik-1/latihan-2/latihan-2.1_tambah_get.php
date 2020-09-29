@@ -34,19 +34,30 @@
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="nm_barang">Harga Satuan</label>
-                                <input type="text" class="form-control" name="nm_barang" id="nm_barang">
+                                <label for="harga">Harga Satuan</label>
+                                <input type="text" class="form-control" name="harga" id="harga">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <label for="nm_barang">Jumlah</label>
-                                <input type="text" class="form-control" name="nm_barang" id="nm_barang">
+                                <label for="jumlah">Jumlah</label>
+                                <input type="text" class="form-control" name="jumlah" id="jumlah">
                             </div>
                         </div>
                     </div>
                     <input style="width:130px; float: right;" type="submit" class="btn btn-primary" name="submit" value="Submit">
                 </form>
+                <?php
+                    if(isset($_GET['submit'])){
+                        $nm_barang = $_GET['nm_barang'];
+                        $harga = $_GET['harga'];
+                        $jumlah = $_GET['jumlah'];
+
+                        $conn->insertDataGet($nm_barang,$harga,$jumlah);
+
+                        header("Location: latihan-2.1.php");
+                    }
+                ?>
             </div>
         </div>
     </div>

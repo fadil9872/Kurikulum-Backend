@@ -23,8 +23,8 @@
 
         <div class="card">
             <div class="mt-3 d-flex justify-content-end">
-                <a href="" class="m-2"><button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah dengan GET</button></a>
-                <a href="" class="m-2"><button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah dengan POST</button></a>
+                <a href="latihan-2.1_tambah_get.php" class="m-2"><button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah dengan GET</button></a>
+                <a href="latihan-2.1_tambah_post.php" class="m-2"><button class="btn btn-primary"><i class="fas fa-plus-circle"></i> Tambah dengan POST</button></a>
             </div>
             <div class="card-body">
                 <table class="table">
@@ -34,6 +34,7 @@
                             <th scope="col">Nama Barang</th>
                             <th scope="col">Harga Satuan</th>
                             <th scope="col">Jumlah</th>
+                            <th scope="col">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,6 +47,12 @@
                                 <td><?= $value['nm_barang'] ?></td>
                                 <td><?= $value['harga'] ?></td>
                                 <td><?= $value['jumlah'] ?></td>
+                                <td>
+                                    <form action="">
+                                        <input type="text" name="id_delete" value="<?= $value['kd_barang'] ?>" hidden>
+                                        <input class="btn btn-danger" type="submit" name="delete" value="Delete">
+                                    </form>
+                                </td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

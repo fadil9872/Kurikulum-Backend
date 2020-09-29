@@ -23,6 +23,12 @@
             $result = $stm->fetchAll(pdo::FETCH_ASSOC);
             return $result;
         }
+
+        public function insertDataGet(){
+            $sql = "INSERT INTO tb_barang2(nm_barang, harga, jumlah)";
+            $stm = $this->conn->prepare($sql);
+            $stm->execute();
+        }
     }
 
     $conn = new Connect;
